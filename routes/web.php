@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/login', [TestLoginController::class, 'redirectToProvider']);
-Route::get('/receive-socialite-auth-code', [TestLoginController::class, 'handleProviderCallback']);
+// Route::get('/login', [TestLoginController::class, 'redirectToProvider']);
+// Route::get('/receive-socialite-auth-code', [TestLoginController::class, 'handleProviderCallback']);
 
 
 
