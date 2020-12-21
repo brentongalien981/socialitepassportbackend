@@ -21,6 +21,9 @@ class TestLoginController extends Controller
     {
         $user = Socialite::driver('google')->user();
 
-        // $user->token;
+        return [
+            'user' => $user,
+            '$user->token' => $user->token
+        ];
     }
 }

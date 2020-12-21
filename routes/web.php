@@ -16,11 +16,15 @@ use Illuminate\Support\Facades\Route;
 
 
 
-// Route::get('/login', [TestLoginController::class, 'redirectToProvider']);
-// Route::get('/receive-socialite-auth-code', [TestLoginController::class, 'handleProviderCallback']);
+Route::get('/login', [TestLoginController::class, 'redirectToProvider']);
+Route::get('/receive-socialite-auth-code', [TestLoginController::class, 'handleProviderCallback']);
 
 
 
 Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/bullshit', function () {
     return view('welcome');
 });
