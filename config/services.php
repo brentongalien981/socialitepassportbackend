@@ -35,7 +35,13 @@ return [
     'google' => [
         'client_id' => env('GOOGLE_CLIENT_ID'),
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-        'redirect' => 'https://backend.asbdev.com/receive-socialite-auth-code',
+        'redirect' => 'http://asbdev.com/receive-socialite-auth-code',
+    ],
+
+    'facebook' => [
+        'client_id' => env('FACEBOOK_APP_ID'),
+        'client_secret' => env('FACEBOOK_APP_SECRET'),
+        'redirect' => 'https://asbdev.com/facebook/receive-socialite-auth-code',
     ],
 
 ];

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\TestLoginController;
+use App\Http\Controllers\TestTeleSignController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+Route::get('/test-telesign', [TestTeleSignController::class, 'test']);
+
+Route::get('/getSampleUserInfo', [TestLoginController::class, 'getSampleUserInfo']);
 
 Route::get('/login', [TestLoginController::class, 'redirectToProvider']);
 Route::get('/receive-socialite-auth-code', [TestLoginController::class, 'handleProviderCallback']);
